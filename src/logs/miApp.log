@@ -1,0 +1,3 @@
+[2023-01-18T12:46:02.454526+01:00] miApp.ERROR: Cliente no encontrado [100] []
+[2023-01-18T12:46:02.455793+01:00] miApp.ERROR: Dulce no encontrado [500] []
+[2023-01-18T12:46:02.455928+01:00] miApp.WARNING: Dulce no comprado [{"src\\app\\Chocolate":{"nombre":"Chocolate negro"}}] []
