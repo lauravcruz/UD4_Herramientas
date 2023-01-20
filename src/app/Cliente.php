@@ -75,6 +75,7 @@ class Cliente
         try {
             array_push($this->dulcesComprados, $d);
             $this->setNumPedidosEfectuados($this->getNumPedidosEfectuados() + 1);
+            $this->log->debug("Se ha añadido dulce al array", [$d->getNombre(), $this->getNombre()]);
             return true;
         } catch (Exception $e) {
             return false;
@@ -87,7 +88,7 @@ class Cliente
             if ($this->listaDeDulces($d)) {
                 echo "El cliente " . $this->getNombre() . " opina sobre " . $d->getNombre() . ": $c";
             } else {
-                $this->log->warning("Dulce no comprado", [$d]); 
+                $this->log->alert("Dulce no comprado", [$d]);
                 throw new DulceNoCompradoException("<p>No puede valorar ese dulce. No lo ha comprado</p>");
             }
         } catch (DulceNoCompradoException $e) {
