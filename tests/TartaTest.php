@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace tests;
 
-include_once("src/autoload.php"); 
+include_once("./src/app/Tarta.php"); 
+include_once("./src/vendor/autoload.php");
 use src\app\Tarta;
 use PHPUnit\Framework\TestCase;
 

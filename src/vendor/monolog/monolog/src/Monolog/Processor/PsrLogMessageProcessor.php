@@ -80,6 +80,6 @@ class PsrLogMessageProcessor implements ProcessorInterface
             }
         }
 
-        return $record->with(message: strtr($record->message, $replacements), context: $context);
+        //return $record->with(message: strtr($record->message, $replacements), context: $context);
     }
 }

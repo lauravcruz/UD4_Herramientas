@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace src\util;
 
+include_once("PasteleriaException.php");
+
 use Exception;
 
 class PasteleriaException extends Exception

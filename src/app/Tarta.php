@@ -3,7 +3,8 @@
 declare(strict_types=1);
 namespace src\app;
 
-include_once("./autoload.php");
+//include_once("autoload.php");
+include_once("Dulce.php");
 
 
 class Tarta extends Dulce

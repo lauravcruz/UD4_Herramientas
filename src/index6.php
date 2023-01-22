@@ -2,20 +2,21 @@
 
 declare(strict_types=1);
 
-include_once("autoload.php");
-include_once(__DIR__ . "/vendor/autoload.php");
+include_once("vendor/autoload.php");
+//include_once("app/autoload.php");
+include_once("app/Pasteleria.php");
 
 use src\app\Pasteleria;
 
 //Lo único que cambia con la clase abstracta es que ya no podemos instanciar un dulce: 
 //$dulce = new Dulce("dulce", 2, 4); 
 
-/*use Monolog\Logger;
+use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
- $log = new Logger("Milogger");
+$log = new Logger("Milogger");
 $log->pushHandler(new StreamHandler("logs/milog.log", Logger::DEBUG));
-$log->debug("Esto es un mensaje de DEBUG"); */
+$log->debug("Esto es un mensaje de DEBUG");
 
 $pasteleria = new Pasteleria("Pastelería");
 $pasteleria->incluirCliente("Peter");
