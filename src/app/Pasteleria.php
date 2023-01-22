@@ -116,6 +116,17 @@ class Pasteleria
         echo $listarCliente;
     }
 
+    /**
+     * Summary of comprarClienteProducto
+     * La función comprarClienteProducto recibe el número del cliente y el número del dulce que compra. 
+     * Se comprueba que ambos están en Pastelería y se llama a la función comprar del cliente
+     * @param int $numeroCliente
+     * @param int $numeroDulce
+     * @throws ClienteNoEncontradoException
+     * @throws DulceNoEncontradoException
+     * @return void
+     */
+
     public function comprarClienteProducto($numeroCliente, $numeroDulce)
     {
         $existeDulce = false;
