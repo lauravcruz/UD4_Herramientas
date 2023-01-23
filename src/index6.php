@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 include_once(__DIR__ . "/vendor/autoload.php");
 include_once("autoload.php");
-/*include_once("vendor/autoload.php");
-include_once("app/autoload.php");
-include_once("app/Pasteleria.php"); */
 
 use src\app\Pasteleria;
 

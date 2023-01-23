@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'ud4herramientas/log',
+        'name' => 'src/log',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b62f7e2c52e23eda9d3f776c9d682c15b658141b',
+        'reference' => '314d94858bab3b2f93e7781b61e5234eb46ed5b3',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -277,6 +277,15 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
+        'src/log' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '314d94858bab3b2f93e7781b61e5234eb46ed5b3',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.1',
             'version' => '1.2.1.0',
@@ -285,15 +294,6 @@
             'install_path' => __DIR__ . '/../theseer/tokenizer',
             'aliases' => array(),
             'dev_requirement' => true,
-        ),
-        'ud4herramientas/log' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => 'b62f7e2c52e23eda9d3f776c9d682c15b658141b',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../../',
-            'aliases' => array(),
-            'dev_requirement' => false,
         ),
     ),
 );

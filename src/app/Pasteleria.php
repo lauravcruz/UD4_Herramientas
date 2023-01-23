@@ -139,6 +139,7 @@ class Pasteleria
                     $existeDulce = true;
                     //Una vez encontrados ambos, realizamos la acción de comprar
                     if ($c->comprar($p)) {
+                        $this->log->alert("Se ha realizado la compra", [$numeroCliente, $numeroDulce]);
                         echo "<p>Se ha realizado la compra</p>";
                     } else {
                         echo "<p>Error en la compra</p>";
@@ -146,7 +147,7 @@ class Pasteleria
                 }
             }
             if (!$existeDulce) {
-                $this->log->error("Dulce no encontrado", [$numeroDulce]);
+                $this->log->warning("Dulce no encontrado", [$numeroDulce]);
                 throw new DulceNoEncontradoException("<p>Dulce no encontrado</p>");
             }
         } catch (DulceNoEncontradoException $e) {

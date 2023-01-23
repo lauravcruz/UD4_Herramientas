@@ -6,6 +6,8 @@ use src\app\Tarta;
 
 $tarta = new Tarta("Tarta de chocolate", 4, 20, 3, 5, 5);
 
-$tarta->setRellenos(["Vainilla", "Chocolate", "Nata"]);
+$rellenos = ["Vainilla", "Chocolate", "Nata"]; 
+$tarta->setRellenos($rellenos);
 
 $tarta->muestraResumen();
+

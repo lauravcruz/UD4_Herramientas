@@ -5,17 +5,12 @@ declare(strict_types=1);
 namespace src\app;
 
 include_once("./autoload.php");
-/* include_once("Dulce.php");
-include_once("./util/ClienteNoEncontradoException.php");
-include_once("./util/DulceNoCompradoException.php");
-include_once("./util/DulceNoEncontradoException.php");
-include_once("./util/LogFactory.php"); */
 
 use src\util\DulceNoCompradoException;
 use Exception;
 use src\util\LogFactory;
 use Monolog\Logger;
-use Psr\Log\LoggerInterface;
+
 
 class Cliente
 {
@@ -40,7 +35,7 @@ class Cliente
         $this->nombre = $nombre;
     }
 
-    public function getNumero()
+    public function getNumero(): int
     {
         return $this->numero;
     }
@@ -81,7 +76,7 @@ class Cliente
         try {
             array_push($this->dulcesComprados, $d);
             $this->setNumPedidosEfectuados($this->getNumPedidosEfectuados() + 1);
-            $this->log->debug("Se ha añadido dulce al array", [$d->getNombre(), $this->getNombre()]);
+            $this->log->info("Se ha añadido dulce al array", [$d->getNombre(), $this->getNombre()]);
             return true;
         } catch (Exception $e) {
             return false;
@@ -94,7 +89,7 @@ class Cliente
             if ($this->listaDeDulces($d)) {
                 echo "El cliente " . $this->getNombre() . " opina sobre " . $d->getNombre() . ": $c";
             } else {
-                $this->log->alert("Dulce no comprado", [$d]);
+                $this->log->critical("Dulce no comprado", [$d]);
                 throw new DulceNoCompradoException("<p>No puede valorar ese dulce. No lo ha comprado</p>");
             }
         } catch (DulceNoCompradoException $e) {

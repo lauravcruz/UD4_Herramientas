@@ -16,6 +16,15 @@ class PasteleriaTest extends TestCase
         $pasteleria = new Pasteleria("Pastelería");
         $pasteleria->incluirCliente("Peter");
 
-        $this->assertArrayHasKey("Peter", $pasteleria->getClientes());
+        $this->assertSame("Peter", $pasteleria->getClientes()[0]->getNombre());
+    }
+
+    public function testListarClientes()
+    {
+        $pasteleria = new Pasteleria("Pastelería");
+        $pasteleria->incluirCliente("Peter");
+
+        $this->expectOutputString("<p>CLIENTES: </p><ul><li>Nombre: Peter</li>        \r\n            <ul><li>Número de pedidos efectuados: 0</li></ul></ul>");
+        $pasteleria->listarClientes(); 
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 namespace src\app;
 
 include_once("./autoload.php");
@@ -62,7 +63,9 @@ class Tarta extends Dulce
     public function setRellenos($rellenos): void
     {
         if (count($rellenos) == $this->getNumPisos()) {
-            array_push($this->rellenos, $rellenos);
+            foreach ($rellenos as $relleno) {
+                array_push($this->rellenos, $relleno);
+            }
         } else {
             echo "Error: la tarta debe tener el mismo número de rellenos que de pisos";
         }
@@ -79,7 +82,10 @@ class Tarta extends Dulce
 
     public function muestraResumen(): void
     {
-        echo parent::muestraResumen() . "<p>Número de pisos: " . $this->getNumPisos() . "</p>";
-        print_r($this->getRellenos());
+        $rellenos = ""; 
+        foreach ($this->getRellenos() as $relleno) {
+            $rellenos .= $relleno . " ";
+        }
+        echo parent::muestraResumen() . "<p>Número de pisos: " . $this->getNumPisos() . "</p><p>Rellenos: " . $rellenos ."</p>";
     }
 }
