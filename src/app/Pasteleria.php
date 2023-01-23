@@ -4,16 +4,7 @@ declare(strict_types=1);
 
 namespace src\app;
 
-//include_once("autoload.php");
-include_once("Dulce.php");
-include_once("Tarta.php");
-include_once("Cliente.php");
-include_once("Chocolate.php");
-include_once("Bollo.php");
-include_once("./util/LogFactory.php");
-include_once("./util/ClienteNoEncontradoException.php");
-include_once("./util/DulceNoCompradoException.php");
-include_once("./util/DulceNoEncontradoException.php");
+include_once("./autoload.php");
 
 use src\util\ClienteNoEncontradoException;
 use src\util\DulceNoEncontradoException;

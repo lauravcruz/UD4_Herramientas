@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace tests;
+namespace src\tests;
 
-include_once("./src/app/Tarta.php"); 
-include_once("./src/vendor/autoload.php");
+include_once("./autoload.php");
+
 use src\app\Tarta;
 use PHPUnit\Framework\TestCase;
 

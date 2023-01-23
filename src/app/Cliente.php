@@ -4,17 +4,18 @@ declare(strict_types=1);
 
 namespace src\app;
 
-//include_once("autoload.php");
-include_once("Dulce.php");
+include_once("./autoload.php");
+/* include_once("Dulce.php");
 include_once("./util/ClienteNoEncontradoException.php");
 include_once("./util/DulceNoCompradoException.php");
 include_once("./util/DulceNoEncontradoException.php");
-include_once("./util/LogFactory.php");
+include_once("./util/LogFactory.php"); */
 
 use src\util\DulceNoCompradoException;
 use Exception;
 use src\util\LogFactory;
 use Monolog\Logger;
+use Psr\Log\LoggerInterface;
 
 class Cliente
 {

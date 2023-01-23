@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace src\util;
 
+include_once("./autoload.php");
+
 use src\util\PasteleriaException;
 use Exception;
 
