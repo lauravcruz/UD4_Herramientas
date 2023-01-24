@@ -19,9 +19,10 @@ class TartaTest extends TestCase
         $this->assertSame($tarta->getPrecio(), 20.0);
     }
 
-    public function testSetRellenos(){
+    public function testSetRellenos()
+    {
         $tarta = new Tarta("Tarta de chocolate", 4, 20, 3, 5, 5);
         $tarta->setRellenos(["Vainilla", "Chocolate"]);
-        $this->expectOutputString("Error: la tarta debe tener el mismo número de rellenos que de pisos"); 
+        $this->expectOutputString("Error: la tarta debe tener el mismo número de rellenos que de pisos");
     }
 }

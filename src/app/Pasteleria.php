@@ -20,36 +20,75 @@ class Pasteleria
     //private $numProductos;
     //private $numClientes;
 
+
     public function __construct(
         public $nombre,
     ) {
         $this->log = LogFactory::getLogger();
     }
-
-    public function getNombre()
+    /**
+     * Summary of getNombre
+     * @return string
+     */
+    public function getNombre(): string
     {
         return $this->nombre;
     }
+    /**
+     * Summary of setNombre
+     * @param string $nombre
+     * @return void
+     */
     public function setNombre($nombre)
     {
         $this->nombre = $nombre;
     }
+
+    /**
+     * Summary of getNumProductos
+     * Devuelve el número total de productos de la pastelería
+     * @return int
+     */
 
     public function getNumProductos()
     {
         return count($this->productos);
     }
 
+    /**
+     * Summary of getNumClientes
+     * Devuelve el número total de clientes de la pastelería
+     * @return int
+     */
+
     public function getNumClientes()
     {
         return count($this->clientes);
     }
 
+    /**
+     * Summary of incluirProducto
+     * Añade un dulce a los productos de la pastelería
+     * @param Dulce $producto
+     * @return void
+     */
     public function incluirProducto(Dulce $producto)
     {
         array_push($this->productos, $producto);
     }
 
+    /**
+     * Summary of incluirTarta
+     * Crea y añade una tarta a los productos de la pastelería
+     * El número se le asigna en función del número de productos total
+     * @param string $nombre
+     * @param float $precio
+     * @param int $numPisos
+     * @param int $minC
+     * @param int $maxC
+     * @param array $rellenos
+     * @return void
+     */
     public function incluirTarta($nombre, $precio, $numPisos, $minC, $maxC, $rellenos)
     {
         if (count($rellenos) != $numPisos) {
@@ -60,32 +99,73 @@ class Pasteleria
             $this->incluirProducto($tarta);
         }
     }
+
+    /**
+     * Summary of incluirBollo
+     * Crea y añade un bollo a los productos de la pastelería
+     * El número se le asigna en función del número de productos total
+     * @param string $nombre
+     * @param float $precio
+     * @param string $relleno
+     * @return void
+     */
     public function incluirBollo($nombre, $precio, $relleno)
     {
         $bollo = new Bollo($nombre, $this->getNumProductos(), $precio, $relleno);
         $this->incluirProducto($bollo);
     }
+    /**
+     * Summary of incluirChocolate
+     * Crea y añade un chocolate a los productos de la pastelería
+     * El número se le asigna en función del número de productos total
+     * @param string $nombre
+     * @param float $precio
+     * @param float $porcentajeCacao
+     * @param float $peso
+     * @return void
+     */
     public function incluirChocolate($nombre, $precio, $porcentajeCacao, $peso)
     {
         $chocolate = new Chocolate($nombre, $this->getNumProductos(), $precio, $porcentajeCacao, $peso);
         $this->incluirProducto($chocolate);
     }
+    /**
+     * Summary of incluirCliente
+     * Crea e incluye un cliente en los clientes de la pastelería
+     * El número se le asigna en función del número de clientes total
+     * @param string $nombre
+     * @return void
+     */
 
     public function incluirCliente($nombre)
     {
         $cliente = new Cliente($nombre, $this->getNumClientes());
         array_push($this->clientes, $cliente);
     }
+    /**
+     * Summary of getClientes
+     * @return array
+     */
 
     public function getClientes()
     {
         return $this->clientes;
     }
+    /**
+     * Summary of getProductos
+     * @return array
+     */
 
     public function getProductos()
     {
         return $this->productos;
     }
+
+    /**
+     * Summary of listarProductos
+     * La función imprime por pantalla el listado de productos de la pastelería
+     * @return void
+     */
 
     public function listarProductos()
     {
@@ -96,6 +176,12 @@ class Pasteleria
         $listarProducto .= "</ul>";
         echo $listarProducto;
     }
+
+    /**
+     * Summary of listarClientes
+     * La función imprime por pantalla el listado de clientes de la pastelería
+     * @return void
+     */
     public function listarClientes()
     {
         $listarCliente = "<p>CLIENTES: </p><ul>";

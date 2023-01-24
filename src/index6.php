@@ -10,7 +10,7 @@ use src\app\Pasteleria;
 //Lo único que cambia con la clase abstracta es que ya no podemos instanciar un dulce: 
 //$dulce = new Dulce("dulce", 2, 4); 
 
-$pasteleria = new Pasteleria("Pastelería");
+/* $pasteleria = new Pasteleria("Pastelería");
 $pasteleria->incluirCliente("Peter");
 $pasteleria->incluirCliente("Dani");
 $pasteleria->incluirCliente("Lui");
@@ -32,3 +32,8 @@ $pasteleria->comprarClienteProducto(100, 0);
 $pasteleria->comprarClienteProducto(0, 500);
 $pasteleria->getClientes()[2]->valorar($pasteleria->getProductos()[0], "No me gusta");
 $pasteleria->getClientes()[0]->valorar($pasteleria->getProductos()[0], "Es mi favorito");
+ */
+
+$pasteleria = new Pasteleria("Pastelería");
+$pasteleria->incluirCliente("Peter");
+$pasteleria->comprarClienteProducto(0, 0);

@@ -9,6 +9,8 @@ include_once("./autoload.php");
 use src\app\Pasteleria;
 use PHPUnit\Framework\TestCase;
 
+
+
 class PasteleriaTest extends TestCase
 {
     public function testIncluirCliente()
@@ -25,6 +27,6 @@ class PasteleriaTest extends TestCase
         $pasteleria->incluirCliente("Peter");
 
         $this->expectOutputString("<p>CLIENTES: </p><ul><li>Nombre: Peter</li>        \r\n            <ul><li>Número de pedidos efectuados: 0</li></ul></ul>");
-        $pasteleria->listarClientes(); 
+        $pasteleria->listarClientes();
     }
 }

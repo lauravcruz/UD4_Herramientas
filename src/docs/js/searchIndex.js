@@ -243,67 +243,67 @@ Search.appendIndex(
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AgetNombre\u0028\u0029",
             "name": "getNombre",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020getNombre",
             "url": "classes/src-app-Pasteleria.html#method_getNombre"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AsetNombre\u0028\u0029",
             "name": "setNombre",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020setNombre",
             "url": "classes/src-app-Pasteleria.html#method_setNombre"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AgetNumProductos\u0028\u0029",
             "name": "getNumProductos",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020getNumProductos\nDevuelve\u0020el\u0020n\u00FAmero\u0020total\u0020de\u0020productos\u0020de\u0020la\u0020pasteler\u00EDa",
             "url": "classes/src-app-Pasteleria.html#method_getNumProductos"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AgetNumClientes\u0028\u0029",
             "name": "getNumClientes",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020getNumClientes\nDevuelve\u0020el\u0020n\u00FAmero\u0020total\u0020de\u0020clientes\u0020de\u0020la\u0020pasteler\u00EDa",
             "url": "classes/src-app-Pasteleria.html#method_getNumClientes"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AincluirProducto\u0028\u0029",
             "name": "incluirProducto",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020incluirProducto\nA\u00F1ade\u0020un\u0020dulce\u0020a\u0020los\u0020productos\u0020de\u0020la\u0020pasteler\u00EDa",
             "url": "classes/src-app-Pasteleria.html#method_incluirProducto"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AincluirTarta\u0028\u0029",
             "name": "incluirTarta",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020incluirTarta\nCrea\u0020y\u0020a\u00F1ade\u0020una\u0020tarta\u0020a\u0020los\u0020productos\u0020de\u0020la\u0020pasteler\u00EDa\nEl\u0020n\u00FAmero\u0020se\u0020le\u0020asigna\u0020en\u0020funci\u00F3n\u0020del\u0020n\u00FAmero\u0020de\u0020productos\u0020total",
             "url": "classes/src-app-Pasteleria.html#method_incluirTarta"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AincluirBollo\u0028\u0029",
             "name": "incluirBollo",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020incluirBollo\nCrea\u0020y\u0020a\u00F1ade\u0020un\u0020bollo\u0020a\u0020los\u0020productos\u0020de\u0020la\u0020pasteler\u00EDa\nEl\u0020n\u00FAmero\u0020se\u0020le\u0020asigna\u0020en\u0020funci\u00F3n\u0020del\u0020n\u00FAmero\u0020de\u0020productos\u0020total",
             "url": "classes/src-app-Pasteleria.html#method_incluirBollo"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AincluirChocolate\u0028\u0029",
             "name": "incluirChocolate",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020incluirChocolate\nCrea\u0020y\u0020a\u00F1ade\u0020un\u0020chocolate\u0020a\u0020los\u0020productos\u0020de\u0020la\u0020pasteler\u00EDa\nEl\u0020n\u00FAmero\u0020se\u0020le\u0020asigna\u0020en\u0020funci\u00F3n\u0020del\u0020n\u00FAmero\u0020de\u0020productos\u0020total",
             "url": "classes/src-app-Pasteleria.html#method_incluirChocolate"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AincluirCliente\u0028\u0029",
             "name": "incluirCliente",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020incluirCliente\nCrea\u0020e\u0020incluye\u0020un\u0020cliente\u0020en\u0020los\u0020clientes\u0020de\u0020la\u0020pasteler\u00EDa\nEl\u0020n\u00FAmero\u0020se\u0020le\u0020asigna\u0020en\u0020funci\u00F3n\u0020del\u0020n\u00FAmero\u0020de\u0020clientes\u0020total",
             "url": "classes/src-app-Pasteleria.html#method_incluirCliente"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AgetClientes\u0028\u0029",
             "name": "getClientes",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020getClientes",
             "url": "classes/src-app-Pasteleria.html#method_getClientes"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AgetProductos\u0028\u0029",
             "name": "getProductos",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020getProductos",
             "url": "classes/src-app-Pasteleria.html#method_getProductos"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AlistarProductos\u0028\u0029",
             "name": "listarProductos",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020listarProductos\nLa\u0020funci\u00F3n\u0020imprime\u0020por\u0020pantalla\u0020el\u0020listado\u0020de\u0020productos\u0020de\u0020la\u0020pasteler\u00EDa",
             "url": "classes/src-app-Pasteleria.html#method_listarProductos"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AlistarClientes\u0028\u0029",
             "name": "listarClientes",
-            "summary": "",
+            "summary": "Summary\u0020of\u0020listarClientes\nLa\u0020funci\u00F3n\u0020imprime\u0020por\u0020pantalla\u0020el\u0020listado\u0020de\u0020clientes\u0020de\u0020la\u0020pasteler\u00EDa",
             "url": "classes/src-app-Pasteleria.html#method_listarClientes"
         },                {
             "fqsen": "\\src\\app\\Pasteleria\u003A\u003AcomprarClienteProducto\u0028\u0029",

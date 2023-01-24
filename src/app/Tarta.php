@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace src\app;
 
 include_once("./autoload.php");
-/* include_once("Dulce.php"); */
-
 
 class Tarta extends Dulce
 {
@@ -82,10 +80,10 @@ class Tarta extends Dulce
 
     public function muestraResumen(): void
     {
-        $rellenos = ""; 
+        $rellenos = "";
         foreach ($this->getRellenos() as $relleno) {
             $rellenos .= $relleno . " ";
         }
-        echo parent::muestraResumen() . "<p>Número de pisos: " . $this->getNumPisos() . "</p><p>Rellenos: " . $rellenos ."</p>";
+        echo parent::muestraResumen() . "<p>Número de pisos: " . $this->getNumPisos() . "</p><p>Rellenos: " . $rellenos . "</p>";
     }
 }
